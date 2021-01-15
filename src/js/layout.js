@@ -25,14 +25,14 @@ const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/">
-							<Home />
+							<Login />
 						</Route>
 						<Route exact path="/signup">
 							<SignUp />
 						</Route>
-						<Route exact path="/login">
+						{/* <Route exact path="/login">
 							<Login />
-						</Route>
+						</Route> */}
 						<PrivateRoute exact path="/dashboard" component={Dashboard} />
 						<Route>
 							<h1>Not found!</h1>
